@@ -14,7 +14,7 @@ export default class Images extends Component {
 
   componentDidMount = () => {
     axios
-      .get("http://localhost:3004/api/images")
+      .get("/api/images")
       .then(res => {
         console.log(res);
         this.setState({
@@ -27,7 +27,7 @@ export default class Images extends Component {
   };
 
   render() {
-    let dispImages = this.state.img.map((image, index) => {
+    var dispImages = this.state.img.map((image, index) => {
       return (
         <ImageTemplate
           key={index}
@@ -37,6 +37,7 @@ export default class Images extends Component {
         />
       );
     });
+
     return <div className="image-cont">{dispImages}</div>;
   }
 }
