@@ -23,6 +23,11 @@
   color: black;
 }
 
+.nav-link {
+  text-decoration: none;
+  color: #d38aa1;
+}
+
 @media (min-width: 1350px) {
   .header-button {
     padding: 12px;

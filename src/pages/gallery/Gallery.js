@@ -78,6 +78,12 @@ export default class Gallery extends Component {
         <Navbar />
         <div className="gallery-cont">
           <div className="gallery-img">
+            <h3 className="message">
+              ***This is will be a protected route when the site goes live. So
+              this page will only be viewable by the owner of the site and no
+              one else. And the Gallary link on the navigation bar will not be
+              there.
+            </h3>
             <h1 className="gallery-header">Gallery</h1>
             <div className="gallery-input">
               <h4>Title:</h4>

@@ -48,6 +48,10 @@
   margin-top: 8%;
 }
 
+.message {
+  text-align: center;
+}
+
 @media (min-width: 1350px) {
   .gallery-header {
     padding-top: 7%;
