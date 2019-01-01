@@ -13,7 +13,7 @@ app.use(cors());
 app.use(express.static(`${__dirname}/../build`));
 
 app.get("/api/images", controller.read);
-app.get("/*", controller.path);
+// app.get("/*", controller.path);
 app.post("/api/images", controller.add);
 app.delete("/api/images/:id", controller.deleted);
 

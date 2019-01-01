@@ -28,11 +28,11 @@ const deleted = (req, res) => {
     });
 };
 
-const path = (req, res) => {
-  res.sendFile(path.join(__dirname, "public/index.html")).catch(err => {
-    res.status(500).json(err);
-  });
-};
+// const path = (req, res) => {
+//   res.sendFile(path.join(__dirname, "public/index.html")).catch(err => {
+//     res.status(500).json(err);
+//   });
+// };
 
 module.exports = {
   read,
