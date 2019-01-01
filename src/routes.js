@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Gallery from "./pages/Gallery";
+import Gallery from "./pages/gallery/Gallery";
 
 export default (
   <Switch>

@@ -1,0 +1,75 @@
+.gallery-imgs-cont:hover > div.gallery-img-drop {
+  padding-bottom: 3%;
+  opacity: 1;
+}
+
+.gallery-img-drop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0;
+  color: white;
+  padding-left: 4%;
+  padding-right: 8%;
+  transition: 0.5s;
+}
+
+.gallery-delete {
+  padding: 8px;
+  border-radius: 12px;
+  background-color: #0d0d0d;
+  color: white;
+  width: 70px;
+}
+
+.gallery-delete:hover {
+  -webkit-animation: shake 0.8s infinite;
+  -moz-animation: shake 0.8s infinite;
+  -o-animation: shake 0.8s infinite;
+  animation: shake 0.8s infinite;
+  color: rgb(126, 0, 0);
+}
+
+@-webkit-keyframes shake {
+  from,
+  to {
+    transform: rotate(0deg);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: rotate(5deg);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: rotate(-5deg);
+  }
+}
+
+@keyframes shake {
+  from,
+  to {
+    transform: rotate(0deg);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: rotate(5deg);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: rotate(-5deg);
+  }
+}

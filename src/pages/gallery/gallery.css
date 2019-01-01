@@ -1,0 +1,65 @@
+.gallery-cont {
+  font-family: "montserrat";
+  background-color: #0d0d0d;
+}
+
+.gallery-img {
+  border: solid 3px black;
+  height: 60vh;
+  background-image: url("../../images/mountains.jpg");
+}
+
+.gallery-header {
+  text-align: center;
+  padding-top: 10%;
+}
+
+.gallery-input {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  margin: 0px auto;
+}
+
+.gallery-input h4 {
+  margin: 0;
+}
+
+.gallery-input input {
+  margin-bottom: 20px;
+}
+
+.gallery-input button {
+  width: 30%;
+  padding: 5px;
+  border-radius: 10px;
+  margin-top: 3%;
+  background-color: #0d0d0d;
+  color: white;
+}
+
+.gallery-button {
+  margin: 6% 0% 0% 8%;
+}
+
+.gallery-images-cont {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 8%;
+}
+
+@media (min-width: 1350px) {
+  .gallery-header {
+    padding-top: 7%;
+  }
+
+  .gallery-input {
+    max-width: 40%;
+  }
+
+  .gallery-img {
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

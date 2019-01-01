@@ -13,6 +13,8 @@ app.use(cors());
 app.use(express.static(`${__dirname}/../build`));
 
 app.get("/api/images", controller.read);
+app.post("/api/images", controller.add);
+app.delete("/api/images/:id", controller.deleted);
 
 massive(process.env.CONNECTION_STRING)
   .then(db => app.set("db", db), console.log("Database Connected"))

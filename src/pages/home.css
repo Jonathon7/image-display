@@ -5,6 +5,7 @@
 .header-text {
   text-align: center;
   margin-top: 25%;
+  padding-bottom: 8%;
 }
 
 .header-text h1 {
@@ -16,8 +17,7 @@
   line-height: 2;
 }
 
-.images-cont {
-  margin-top: 15%;
+.gallery-images-cont {
   background-color: #0d0d0d;
 }
 
@@ -33,11 +33,11 @@
     font-size: 40px;
   }
 
-  .images-cont {
+  .gallery-images-cont {
     display: flex;
   }
 
-  .images-cont img {
+  .gallery-images-cont img {
     width: 300px;
   }
 }

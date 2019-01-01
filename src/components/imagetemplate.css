@@ -2,8 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 15%;
   transition: 0.5s;
+  background-color: #0d0d0d;
+  padding-top: 10%;
 }
 
 .img {
@@ -35,9 +36,13 @@
 
 @media (min-width: 1350px) {
   .image-cont {
-    padding-top: 3%;
+    padding-top: 8%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+
+  .img {
+    width: 300px;
   }
 }

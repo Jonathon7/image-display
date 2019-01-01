@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./images.css";
 import axios from "axios";
 import ImageTemplate from "./ImageTemplate";
 
@@ -27,7 +26,7 @@ export default class Images extends Component {
   };
 
   render() {
-    var dispImages = this.state.img.map((image, index) => {
+    let dispImages = this.state.img.map((image, index) => {
       return (
         <ImageTemplate
           key={index}
