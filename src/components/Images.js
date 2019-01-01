@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./images.css";
 import axios from "axios";
 import ImageTemplate from "./ImageTemplate";
+import greenLion from "../images/green-lion.jpg";
 
 export default class Images extends Component {
   constructor() {
@@ -38,6 +39,11 @@ export default class Images extends Component {
       );
     });
 
-    return <div className="image-cont">{dispImages}</div>;
+    return (
+      <div className="image-cont">
+        {dispImages}
+        <img src={greenLion} alt="" />
+      </div>
+    );
   }
 }
