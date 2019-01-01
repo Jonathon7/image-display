@@ -20,7 +20,6 @@ export default class Gallery extends Component {
     axios
       .get("/api/images")
       .then(res => {
-        console.log(res);
         this.setState({
           img: res.data
         });
@@ -82,7 +81,8 @@ export default class Gallery extends Component {
               ***This is will be a protected route when the site goes live. So
               this page will only be viewable by the owner of the site and no
               one else. And the Gallary link on the navigation bar will not be
-              there.
+              there. Also the app crashes when you refresh on the gallery page.
+              I'm fixing it soon though.
             </h3>
             <h1 className="gallery-header">Gallery</h1>
             <div className="gallery-input">
