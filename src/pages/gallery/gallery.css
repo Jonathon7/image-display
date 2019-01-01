@@ -50,6 +50,7 @@
 
 .message {
   text-align: center;
+  font-size: 10px;
 }
 
 @media (min-width: 1350px) {
