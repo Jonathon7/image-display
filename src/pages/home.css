@@ -2,19 +2,42 @@
   font-family: "montserrat";
 }
 
-.nav-text {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding-top: 2%;
-}
-
 .header-text {
   text-align: center;
   margin-top: 25%;
 }
 
+.header-text h1 {
+  font-weight: bolder;
+}
+
 .header-text h3 {
   font-weight: lighter;
-  line-height: 1.8;
+  line-height: 2;
+}
+
+.images-cont {
+  margin-top: 15%;
+  background-color: #0d0d0d;
+}
+
+@media (min-width: 1350px) {
+  .header-text {
+    max-width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10%;
+  }
+
+  .header-text h1 {
+    font-size: 40px;
+  }
+
+  .images-cont {
+    display: flex;
+  }
+
+  .images-cont img {
+    width: 300px;
+  }
 }

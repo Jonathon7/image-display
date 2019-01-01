@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import "./images.css";
-import lion from "../images/green-lion.jpg";
-import smallLion from "../images/small-lion.jpg";
-import wolf from "../images/wolf.jpg";
+import axios from "axios";
+import ImageTemplate from "./ImageTemplate";
 
 export default class Images extends Component {
   constructor() {
@@ -12,26 +11,32 @@ export default class Images extends Component {
       img: []
     };
   }
+
+  componentDidMount = () => {
+    axios
+      .get("http://localhost:3004/api/images")
+      .then(res => {
+        console.log(res);
+        this.setState({
+          img: res.data
+        });
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  };
+
   render() {
     let dispImages = this.state.img.map((image, index) => {
       return (
-        <div key={index}>
-          <img src={image.url} alt="" />
-        </div>
+        <ImageTemplate
+          key={index}
+          url={image.url}
+          title={image.title}
+          date={image.date}
+        />
       );
     });
-    return (
-      <div className="image-cont">
-        <img src={lion} alt="" width="90%" className="img" />
-        <img src={smallLion} alt="" width="90%" className="img" />
-        <img src={wolf} alt="" width="90%" className="img" />
-        <img src={lion} alt="" width="90%" className="img" />
-        <img src={smallLion} alt="" width="90%" className="img" />
-        <img src={wolf} alt="" width="90%" className="img" />
-        <img src={lion} alt="" width="90%" className="img" />
-        <img src={smallLion} alt="" width="90%" className="img" />
-        <img src={wolf} alt="" width="90%" className="img" />
-      </div>
-    );
+    return <div className="image-cont">{dispImages}</div>;
   }
 }

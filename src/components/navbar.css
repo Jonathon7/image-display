@@ -1,0 +1,32 @@
+.nav-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0% 8% 0% 8%;
+  background-color: #0d0d0d;
+  color: white;
+}
+
+.nav-text h1 {
+  color: #d38aa1;
+  letter-spacing: 2px;
+}
+
+.header-button {
+  padding: 7px;
+  border-radius: 8px;
+  background-color: #d38aa1;
+  color: white;
+}
+
+.header-button:hover {
+  color: black;
+}
+
+@media (min-width: 1350px) {
+  .header-button {
+    padding: 12px;
+    border-radius: 12px;
+    width: 7%;
+  }
+}
